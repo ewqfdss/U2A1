@@ -58,6 +58,11 @@ public class vehicleProgram extends javax.swing.JFrame {
         jLabel3.setText("Set your travel distance (km)");
 
         initialRequirementsSubmit.setText("Submit");
+        initialRequirementsSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                initialRequirementsSubmitActionPerformed(evt);
+            }
+        });
 
         initialRequirementsError.setEditable(false);
 
@@ -209,6 +214,11 @@ public class vehicleProgram extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void initialRequirementsSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_initialRequirementsSubmitActionPerformed
+        // TODO add your handling code here:
+        gasPrice = gasPriceInput.getText();
+    }//GEN-LAST:event_initialRequirementsSubmitActionPerformed
 
     /**
      * @param args the command line arguments
